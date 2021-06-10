@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;1,400;1,900&family=Six+Caps&display=swap');
+
+*,*:after *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    
+    background-color: #232A2C;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+    /* &:before {
+        content:'';
+        position: absolute;
+        left: 12%;
+        border-left: 1px solid rgba(0,0,0,0.2);
+        height: 100vh;
+        top: 0;
+    } */
+}
+
+
+#header {
+    display: flex;
+    position: absolute;
+    width: 95%;
+    top: 0;
+    left: 0;
+    padding: 10px 18px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#header .logo {
+    width: 70px;
+    border-radius: 25px;
+    padding: 6px 1px;
+    pointer-events: none;
+}
+
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#header ul a {
+    text-decoration: none;
+    padding: 4px 2px;
+    color: #A2C4BA;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+}
+
+#header ul span {
+    padding: 4px 1px;
+    color: #A2C4BA;
+}
+
+.container{
+    margin-left: -40%;
+}
+
+.title{
+    font-family: 'Playfair Display SC',serif;
+    font-size: 7.5rem;
+    line-height: 7.7rem;
+    color: #A2C4BA;
+    pointer-events: none;
+    position:relative;
+
+    &:before {
+        content:'';
+        position:absolute;
+        width:7%;
+        height: 3px;
+        background: #A2C4BA;
+        left:-12%;
+        top: 17%;
+    }
+    .title-2, .title-3 {
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+}
+
+
+
+.container p {
+    font-family: 'Playfair Display SC',serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color:#A2C4BA;
+}
+
+.waterbg{
+
+    position: absolute;
+    width: 30%;
+    height: 100vh;
+    z-index: -1;
+    background: url('../assets/img.jpg');
+    right:0;
+    background-size: cover;
+    mix-blend-mode:luminosity;
+    opacity:0.14;
+
+}
+
+
+.img {
+    position: absolute;
+    width: 12em;
+    height: 22em;
+    top: 30%;
+    left: 40%;
+    z-index: 1;
+    
+}
+
+.cursor {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.4);
+    margin-left: -1.5em;
+    margin-top: -1.5em;
+}
+    
+

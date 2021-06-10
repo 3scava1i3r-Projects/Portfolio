@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Six+Caps&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -59,12 +59,55 @@
             <li>
                 <a href="#">Home</a>
             </li>
-            
-            
-            
         </ul>
-        
     </nav>
-    
+
+    <div class="waterbg"></div>
+    <div class="container">
+        <div class="title">
+            <div class="title-1">Hey guys!</div>
+            <div class="title-2">how's it</div>
+            <div class="title-3">hanging</div>
+        </div>
+        <p>lemme show you around</p>
+    </div>
+    <div class="img"></div>
+    <div class="cursor"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="hover.js"></script>
+
+
+    <script>
+        var myAnimation = new hoverEffect({
+            parent: document.querySelector('.img'),
+            intensity: 0.3,
+            image1: './assets/ww.jpg',
+            image2: './assets/www.jpg',
+            displacementImage: './assets/dis.png'
+        });
+
+        let cursor = {
+            x:0,
+            y:0
+        }
+
+        let title = document.querySelector('.container');
+        let img = document.querySelector('.img');
+        let cursorCircle = document.querySelector('.cursor');
+
+
+        document.addEventListener('mousemove' , (e) => {
+            cursor.x = -e.clientX * .033;
+            cursor.y = -e.clientY * .033;
+
+            img.style.transform = `translate(${cursor.x}px , ${cursor.y}px)`;
+            cursorCircle.style.transform = `translate(${e.clientX}px , ${e.clientY}px)`;
+        })
+    </script>
+
 </body>
 </html>
