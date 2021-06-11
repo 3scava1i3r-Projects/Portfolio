@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #272D28;
+  background-color: #212522fa;
   display: grid;
   place-content: center;
   height: 100vh;
@@ -34,7 +34,7 @@ body {
 }
 
 #header .logo {
-  width: 70px;
+  width: 60px;
   border-radius: 25px;
   padding: 6px 1px;
   pointer-events: none;
@@ -44,13 +44,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 #header ul li {
   list-style: none;
   margin-left: 10px;
-  margin-bottom: 20px;
 }
 
 #header ul a {
@@ -87,7 +85,7 @@ body {
   left: -12%;
   top: 17%;
 }
-.title .title-2, .title .title-3 {
+.title .title-1, .title .title-3 {
   position: relative;
   z-index: 2;
 }
@@ -116,16 +114,16 @@ body {
   width: 12em;
   height: 22em;
   top: 30%;
-  left: 40%;
+  left: 37%;
   z-index: 1;
 }
 
-.cursor {
-  position: absolute;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  border: 1px solid rgba(162, 196, 186, 0.4);
-  margin-left: -1.5em;
-  margin-top: -1.5em;
-}
+/* .cursor {
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 1px solid rgba(162, 196, 186, 0.4);
+    margin-left: -1.5em;
+    margin-top: -1.5em;
+} */
