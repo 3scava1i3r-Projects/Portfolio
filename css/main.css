@@ -7,10 +7,12 @@
 }
 
 body {
-  background-color: #252c27fa;
+  background-color: #2e3630;
   display: -ms-grid;
   display: grid;
   margin: 0;
+  overflow-x: hidden;
+  /* Hide scrollbars */
 }
 
 #header {
@@ -162,7 +164,7 @@ body {
   position: relative;
   font-size: 70px;
   -webkit-text-stroke: 2px #A2C4BA;
-  -webkit-text-fill-color: #252c27fa;
+  -webkit-text-fill-color: #141815fa;
 }
 
 #s1:hover {
@@ -219,7 +221,7 @@ body {
   position: relative;
   font-size: 70px;
   -webkit-text-stroke: 2px #A2C4BA;
-  -webkit-text-fill-color: #252c27fa;
+  -webkit-text-fill-color: #252c27f5;
   left: 1%;
 }
 
@@ -228,9 +230,11 @@ body {
 }
 
 #proj-section {
+  position: relative;
   max-width: 88%;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 60px 15px;
   -webkit-transition: -webkit-transform 0.375s;
   transition: -webkit-transform 0.375s;
@@ -240,7 +244,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 400px;
+  margin-top: 180px;
 }
 
 #work {
@@ -320,26 +324,30 @@ body {
 }
 
 #projects {
-  position: absolute;
-  background-color: #252c27fa;
+  position: relative;
   color: #A2C4BA;
   text-align: center;
-  margin-bottom: 100px;
-  font-size: 100px;
+  margin-top: 200px;
   z-index: 1;
-  width: 80%;
-  margin-left: 10%;
-  opacity: 100%;
-  height: 20%;
+  width: 60%;
+  opacity: 1;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2e3630;
 }
 
-#project p {
-  vertical-align: middle;
+#projects h1 {
+  font-size: 80px;
+}
+
+#projects p {
+  font-size: 22px;
 }
 
 #svg-div {
-  z-index: 0;
+  z-index: -1;
   position: absolute;
-  margin-top: -100px;
+  margin-top: 100px;
 }
 /*# sourceMappingURL=main.css.map */
