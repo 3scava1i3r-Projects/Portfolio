@@ -217,12 +217,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
   position: relative;
   font-size: 70px;
   -webkit-text-stroke: 2px #A2C4BA;
   -webkit-text-fill-color: #252c27f5;
-  left: 1%;
+  left: 1.5%;
 }
 
 #h-tag:hover {
@@ -351,5 +350,17 @@ body {
   z-index: -1;
   position: absolute;
   margin-top: 100px;
+}
+
+#vertical {
+  float: left;
+  font-size: 18px;
+  color: #A2C4BA;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
+  margin-top: -80px;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=main.css.map */
