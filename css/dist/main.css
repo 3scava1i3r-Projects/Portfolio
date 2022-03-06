@@ -163,7 +163,6 @@ body {
 #h-tag {
   margin: 7.5px 10px;
   text-decoration: none;
-  color: #fbff1c;
 }
 
 #h-tag:hover {
@@ -279,7 +278,7 @@ body {
   position: relative;
   color: #A2C4BA;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
   z-index: 1;
   width: 60%;
   opacity: 1;
