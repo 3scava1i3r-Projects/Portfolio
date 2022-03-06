@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #2e3630;
+  background-image: linear-gradient(70deg, #042731, #2e3630);
   display: -ms-grid;
   display: grid;
   margin: 0;
@@ -185,8 +185,7 @@ body {
 #h-tag {
   margin: 7.5px 10px;
   text-decoration: none;
-  -webkit-text-stroke: 2px #A2C4BA;
-  -webkit-text-fill-color: #141815fa;
+  color: #fbff1c;
 }
 
 #h-tag:hover {
@@ -251,7 +250,7 @@ body {
 #work {
   width: 100%;
   height: 450px;
-  background: #A2C4BA;
+  background: #83a0975b;
   margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,7 +336,6 @@ body {
   height: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #2e3630;
 }
 
 #projects h1 {
