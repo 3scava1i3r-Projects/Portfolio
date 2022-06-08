@@ -185,11 +185,11 @@ body {
 #h-tag {
   margin: 7.5px 10px;
   text-decoration: none;
-  color: #fbff1c;
+  color: #425c5c;
 }
 
 #h-tag:hover {
-  -webkit-text-fill-color: #A2C4BA;
+  -webkit-text-fill-color: #a2c3b9;
 }
 
 @-webkit-keyframes marquee {
@@ -329,7 +329,7 @@ body {
   position: relative;
   color: #A2C4BA;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
   z-index: 1;
   width: 60%;
   opacity: 1;

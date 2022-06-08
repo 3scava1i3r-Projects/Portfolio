@@ -193,12 +193,12 @@ body {
 #h-tag {
     margin: 7.5px 10px;
     text-decoration: none;
-    color:rgb(251, 255, 28);
+    color:hsl(180, 17%, 31%);
     
 }
 
 #h-tag:hover {
-    -webkit-text-fill-color: #A2C4BA;
+    -webkit-text-fill-color: hsl(162, 22%, 70%);
 }
 
 @keyframes marquee {
